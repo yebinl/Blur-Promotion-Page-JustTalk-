@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blur</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<style type="text/css">
+	.circle{
+		border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;
+	}
+	.text{
+		text-align:center;
+		color:white;
+	}
+	</style>
+
+</head>
+<body onload="create()" style="overflow:hidden">
+	<div>
+		<div style="position:absolute;">
+			<img style="width:100%;" src="images/Asset 277@3x.png">
+		</div>
+		<div style="position:absolute;">
+			<div>
+				<img style="width:25%;margin-top:6%;margin-left:6%;" src="images/logo_white_type_1000.png">
+			</div>
+			<div style="margin-top:-3%;overflow:hidden;">
+				<div style="float:right;width:40%;text-align: right;">
+					<img style="width:82%;margin-top:12%;margin-right:-12%" src="images/Asset 1.png">
+				</div>
+				<div style="float:right;width:60%;">
+					<img style="width:100%;margin-top:20%;margin-left:8%" src="images/question.png">
+				</div>
+			</div>
+			<div style="margin-top:10%;overflow:hidden;">
+				<div id="circle" class="circle" style="width:20%;background-color:white;margin:0 auto;text-align:center;border:15px solid white;">
+					<img style="width:100%;" src="images/logo_300.png">
+				</div>
+				<div style="margin-top:2%;margin-left:8%;margin-right:8%;">
+					<p class="text" style="font-weight:bold;font-size:300%">Blur, Vibe & Connect</p>
+					<p class="text" style="font-size:240%">A new social platform to find, chat & connect by showing your personality before anything else.</p>
+				</div>
+			</div>
+			<div style="margin-top:5%;text-align:center;">
+				<a href="https://itunes.apple.com/us/app/blur-meet-chat-with-new-friends-nearby/id1181714149?ls=1&mt=8" target="_blank">
+					<img style="width:60%" src="images/ios_button.png">
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+
+	function create(){
+		if (window.innerHeight)
+			winHeight = window.innerHeight;
+		else if ((document.body) && (document.body.clientHeight))
+			winHeight = document.body.clientHeight;
+		else
+			winHeight = document.documentElement.clientHeight;
+		winHeight=0.08*winHeight;
+		document.getElementById("circle").style.height=winHeight+"px";
+		document.getElementById("circle").style.width=winHeight+"px";
+	}
+	
+</script>
+
+</html>
